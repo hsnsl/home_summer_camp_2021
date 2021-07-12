@@ -1,0 +1,47 @@
+title hello
+favicon https://harmash.com/template/images/harmash_x.PNG
+import style.css
+head_end
+h1 Hasan_Saleh_is_a_Artist_,Devleoper_,Student a b
+h2 Hasan_Saleh_is_a_Artist_,Devleoper_,Student a b
+h3 Hasan_Saleh_is_a_Artist_,Devleoper_,Student a b
+h4 Hasan_Saleh_is_a_Artist_,Devleoper_,Student a b
+h5 Hasan_Saleh_is_a_Artist_,Devleoper_,Student a b
+h6 Hasan_Saleh_is_a_Artist_,Devleoper_,Student a b
+p Hasan_Saleh_is_a_Artist_,Devleoper_,Student a b
+label Hasan_Saleh_is_a_Artist_,Devleoper_,Student a b
+line
+link FB.COM https://www.facebook.com thisisid thisisclass
+line
+video https://www.w3schools.com/html/mov_bbb.mp4
+line
+line
+youtube aQzUaZGDJ80
+line
+img https://i.ytimg.com/an_webp/OJdG8wsU8cw/mqdefault_6s.webp?du=3000&sqp=CPjGr4cG&rs=AOn4CLARDPCMvfvIHYySynqKzJi7nY1fZg c c
+ul 
+li hasan 
+li abed 
+li yamin
+ul_end
+hr 
+strong TheFatRat
+line 
+del bad
+line 
+u good
+line 
+mark C++
+line 
+samp error ocuured: 0x00cffe
+line 
+code cout<<"Hello,world\n";
+line 
+var x+y=z 
+line 
+mail hasan.ismail.saleh@gmail.com
+line 
+button hello k k
+line
+script src.js
+body_end
