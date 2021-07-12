@@ -83,7 +83,6 @@ def __read__():
     print('The Exam have '+str(s)+' Questions')
     num=s
 __read__()
-os.system('pause')
 webbrowser.open_new(folder+'exam.html')
 stransar='['
 for i in range(len(ansar)):
