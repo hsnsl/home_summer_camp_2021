@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Editor</title>
+  </head>
+  <body>
+      <div class="container-fluid">
+          <br><br>
+          <h4 class="text-center text-success">محرر الاكواد</h4>
+          <hr/>
+          <div class="row">
+              <div class="col-md-6 col-sm-12">
+                  <div class="card">
+                      <div class="card-header">
+                          <div class="float-left">
+                              <h3 class="text-info">
+                                  الكود
+                              </h3>
+                          </div>
+                          <div class="float-right">
+                              <div class="form-group">
+                                  <input type="button" id="Clear" class="btn btn-primary btn-sm" value="Clear">
+                                <input type="button" id="run" class="btn btn-success btn-sm" value="Run">   
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card-body">
+                          <div id="myEditor" style="min-height:90vh;">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                  <div class="card" style="min-height:90vh;">
+                      <div class="card-header">
+                          <h3 class="text-info">النتيجة</h3>
+                      </div>
+                          <div class="card-body" id="output"></div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <style>
+</style>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script type="text/javascript">
+    var e=ace.edit('myEditor');
+    e.getSession().setMode('ace/mode/html');
+    e.setTheme("ace/theme/xcode");
+    e.setValue(`<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+`);
+$(document).ready(function(){
+    $(document).on('click','#run',function(){
+        var code=e.getValue();
+        $("#output").html(code);
+    })
+})
+    </script>
+  </body>
+</html>
